@@ -1,0 +1,12 @@
+.table {
+  border: 1px solid orange;
+
+  thead {
+    border: 2px solid #c4e5f2;
+  }
+
+  tr:hover {
+    background-color: #c4e5f2;
+    cursor: pointer;
+  }
+}
