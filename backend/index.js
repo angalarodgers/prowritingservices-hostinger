@@ -2,6 +2,8 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import multer from "multer";
+import * as dotenv from "dotenv";
+dotenv.config();
 const PORT = process.env.PORT || 8880;
 const app = express();
 
@@ -30,7 +32,7 @@ app.use(cookieParser());
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "../client/public/order_files");
+    cb(null, "../customer/public/order_files");
   },
   filename: function (req, file, cb) {
     // const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);

@@ -92,16 +92,6 @@ const Bottom = () => {
         </div>
       </div>
 
-      <div className="col-sm-6 col-lg-12 my-4 text-center">
-        <hr />
-        <h5>Pro Writing Services</h5>
-        <div className="ui-company-text  tx-gray-500">
-          we have a team of experienced writers to assist you 24/7 No more.
-          Share paper instructions with our writers. Sit back and wait for the
-          complete paper.
-        </div>
-      </div>
-
       <div className="col-sm-6 col-lg-12 text-center">
         <div className="card-body">
           <span style={{ color: "#A6A6A6" }}>We accept</span>
