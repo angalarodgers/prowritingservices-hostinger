@@ -20,9 +20,9 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
-      "http://localhost:5174",
-      "http://localhost:5175",
+      process.env.CUSTOMER_URL,
+      process.env.WRITER_URL,
+      process.env.ADMIN_URL,
     ],
   })
 );
