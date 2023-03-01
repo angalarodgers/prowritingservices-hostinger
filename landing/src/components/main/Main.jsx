@@ -105,6 +105,54 @@ const Main = () => {
                         Essay (Any Type)
                       </option>
                       <option value={"Report"}>Report</option>
+                      <option value="Admission Essay">Admission Essay</option>
+                      <option value="Annotated Bibliography">
+                        Annotated Bibliography
+                      </option>
+                      <option value="Argumentative">Argumentative essay</option>
+                      <option value="Argumentative essay">
+                        Article Review
+                      </option>
+                      <option value="Article Writing">Article Writing</option>
+                      <option value="Assignment (Any type)">
+                        Assignment (Any type)
+                      </option>
+                      <option value="Book/Movie Review">
+                        Book/Movie Review
+                      </option>
+                      <option value="Business Plan">Business Plan</option>
+                      <option value="Business Proposal">
+                        Business Proposal
+                      </option>
+                      <option value="Capstone">Capstone Project</option>
+                      <option value="Case">Case Study</option>
+                      <option value="Coursework">Coursework</option>
+                      <option value="Creative">Creative Writing</option>
+                      <option value="Critical">
+                        Critical Thinking / Review
+                      </option>
+                      <option value="Discussion">Discussion Post</option>
+                      <option value="Essay (any type)">Essay (any type)</option>
+                      <option value="Homework">Homework </option>
+                      <option value="Lab">Lab Report</option>
+                      <option value="Letter">Letter/Memo</option>
+                      <option value="Literature">Literature Review</option>
+                      <option value="Marketing">Marketing Plan</option>
+                      <option value="Multi">Multi-choice questions</option>
+                      <option value="Other">Other</option>
+                      <option value="Outline">Outline</option>
+                      <option value="">
+                        PowerPoint PowerPoint Presentation (with speaker notes)
+                      </option>
+                      <option value="Reaction">Reaction Paper</option>
+                      <option value="Reflective">Reflective Writing</option>
+                      <option value="Research">Research Paper</option>
+                      <option value="Research">Research Proposal</option>
+                      <option value="Script">Script writing</option>
+                      <option value="Short">Short Answer Questions</option>
+                      <option value="SWOT">SWOT Analysis</option>
+                      <option value="Term">Term Paper</option>
+                      <option value="Thesis">Thesis/Dissertation</option>
                     </select>
                   </div>
                   <div className="form-group">
