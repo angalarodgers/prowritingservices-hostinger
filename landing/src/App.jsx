@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, HashRouter } from "react-router-dom";
 import Home from "./Home";
 import Services from "./Services";
 import About from "./About";
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <main>
-      <RouterProvider router={router}></RouterProvider>
+      <HashRouter router={router}></HashRouter>
     </main>
   );
 }
