@@ -7,17 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-admin/node_modules
-backend/node_modules
-customer/node_modules
-landing/node_modules
-writer/node_modules
-prowritingservices/node_modules
-admin/.env
-backend/.env
-customer/.env
-landing/.env
-writer/.env
+node_modules
 dist
 dist-ssr
 *.local
