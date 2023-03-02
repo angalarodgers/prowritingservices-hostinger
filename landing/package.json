@@ -1,7 +1,7 @@
 {
   "name": "landing",
-  "private": true,
   "version": "0.0.0",
+  "homepage":".",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "sass": "^1.58.0",
+    "serve": "^14.2.0",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
