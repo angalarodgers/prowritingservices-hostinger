@@ -1,8 +1,7 @@
 {
   "name": "landing",
   "version": "0.1.0",
-  "homepage": "./",
-  "private": true,
+  "homepage": ".",
   "type": "module",
   "scripts": {
     "dev": "vite",
