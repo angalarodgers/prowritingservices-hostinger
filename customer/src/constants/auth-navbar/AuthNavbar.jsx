@@ -53,8 +53,7 @@ const AuthNavbar = () => {
                 <li className="nav-item d-flex align-items-center">
                   <a
                     className="btn btn-round btn-sm mb-0 btn-outline-primary me-2"
-                    target="_blank"
-                    href="https://www.creative-tim.com/builder/soft-ui?ref=navbar-dashboard"
+                    href="#"
                   >
                     Create Order
                   </a>
