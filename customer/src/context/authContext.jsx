@@ -14,7 +14,7 @@ export const AuthContextProvider = ({ children }) => {
         "http://api.prowritingservice.net/api/auth/login",
         inputs,
         {
-          withCredentials: true,
+          "Access-Control-Allow-Credentials": true,
         }
       );
       console.log(res);
