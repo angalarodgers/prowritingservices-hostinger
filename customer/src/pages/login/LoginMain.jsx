@@ -22,15 +22,18 @@ const LoginMain = () => {
     } else if (inputs.password.length === 0) {
       toast.error("Password is required!");
     } else {
-      const res = await login(inputs);
-
-      if (res.status === 200) {
-        toast.success("Logged In Successfully!");
-        navigate("/dashboard");
-      } else if (res.response.status == 404) {
-        toast.error(res.response.data);
-      } else {
-        toast.error(res.response.data);
+      try {
+        const res = await login(inputs);
+        if (res.status === 200) {
+          toast.success("Logged In Successfully!");
+          navigate("/dashboard");
+        } else if (res.response.status == 404) {
+          toast.error(res.response.data);
+        } else {
+          toast.error(res.response.data);
+        }
+      } catch (error) {
+        console.log(error);
       }
     }
   };
