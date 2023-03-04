@@ -14,24 +14,18 @@ import writerRoutes from "./routes/writers.js";
 import messageRoutes from "./routes/messages.js";
 
 //middleware
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", true);
-  next();
-});
+
 app.use(express.json());
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "http://localhost:5174",
-      "http://localhost:5175",
-      process.env.CUSTOMER_URL,
-      process.env.CLIENT_URL,
-      process.env.ADMIN_URL,
-    ],
+    origin: "*",
   })
 );
 app.use(cookieParser());
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {

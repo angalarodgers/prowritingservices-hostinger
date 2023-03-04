@@ -15,7 +15,6 @@ export const AuthContextProvider = ({ children }) => {
         inputs,
         {
           withCredentials: true,
-          crossorigin: true,
         }
       );
       console.log(res);
