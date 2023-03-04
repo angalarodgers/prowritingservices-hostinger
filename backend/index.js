@@ -19,7 +19,18 @@ app.use((req, res, next) => {
   next();
 });
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "http://localhost:5175",
+      process.env.CUSTOMER_URL,
+      process.env.CLIENT_URL,
+      process.env.ADMIN_URL,
+    ],
+  })
+);
 app.use(cookieParser());
 
 const storage = multer.diskStorage({
