@@ -11,7 +11,7 @@ export const AuthContextProvider = ({ children }) => {
   const login = async (inputs) => {
     try {
       const res = await axios.post(
-        "http://89.116.212.238:8880/api/auth/login",
+        "https://api.prowritingservice.net/api/auth/login",
         inputs,
         {
           withCredentials: true,

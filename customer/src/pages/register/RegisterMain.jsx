@@ -28,7 +28,7 @@ const RegisterMain = () => {
     } else {
       try {
         const res = await axios.post(
-          "http://api.prowritingservice.net/api/auth/register",
+          "https://api.prowritingservice.net/api/auth/register",
           inputs
         );
         console.log(res);
@@ -38,7 +38,7 @@ const RegisterMain = () => {
           navigate("/dashboard");
         }
       } catch (err) {
-        toast.error(err.response.data);
+        toast.error(err);
       }
     }
   };
