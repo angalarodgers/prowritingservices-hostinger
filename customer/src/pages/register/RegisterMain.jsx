@@ -28,7 +28,7 @@ const RegisterMain = () => {
     } else {
       try {
         const res = await axios.post(
-          "http://localhost:8880/api/auth/register",
+          "http://api.prowritingservice.net/api/auth/register",
           inputs
         );
         console.log(res);
