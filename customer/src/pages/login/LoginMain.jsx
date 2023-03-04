@@ -27,10 +27,10 @@ const LoginMain = () => {
         if (res.status === 200) {
           toast.success("Logged In Successfully!");
           navigate("/dashboard");
-        } else if (res.response.status == 404) {
-          toast.error(res.response.data);
+        } else if (res.status == 404) {
+          toast.error(res.data);
         } else {
-          toast.error(res.response.data);
+          toast.error(res.data);
         }
       } catch (error) {
         console.log(error);

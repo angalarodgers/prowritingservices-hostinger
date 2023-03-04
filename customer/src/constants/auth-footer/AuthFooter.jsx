@@ -81,13 +81,7 @@ const AuthFooter = () => {
             </a>
           </div>
         </div>
-        <div className="row">
-          <div className="col-8 mx-auto text-center mt-1">
-            <p className="mb-0 text-secondary">
-              Copyright © Soft by Creative Tim.
-            </p>
-          </div>
-        </div>
+        <div className="row"></div>
       </div>
     </footer>
   );
