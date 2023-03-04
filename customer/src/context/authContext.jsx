@@ -11,7 +11,7 @@ export const AuthContextProvider = ({ children }) => {
   const login = async (inputs) => {
     try {
       const res = await axios.post(
-        "http://localhost:8880/api/auth/login",
+        "http://api.prowritingservice.net/api/auth/login",
         inputs,
         {
           withCredentials: true,

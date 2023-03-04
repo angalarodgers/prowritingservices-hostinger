@@ -1,0 +1,89 @@
+server {
+    listen 80;
+    server_name prowritingservice.net www.prowritingservice.net;
+    
+    location /landing {
+        root /var/www/pws/landing;
+        index  index.html index.htm;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+    }
+    
+    location /api {
+        proxy_pass http://89.116.212.238:8800;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+server {
+    listen 80;
+    server_name client.prowritingservice.net;
+    location / {
+        root /var/www/pws/client;
+        index  index.html index.htm;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+    }
+}
+
+server {
+    listen 80;
+    server_name writer.prowritingservice.net;
+    location / {
+        root /var/www/pws/writer;
+        index  index.html index.htm;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+    }
+}
+
+server {
+    listen 80;
+    server_name admin.prowritingservice.net;
+    location / {
+        root /var/www/pws/admin;
+        index  index.html index.htm;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+    }
+}
+
+server {
+    listen 80;
+    server_name pws.prowritingservice.net;
+    root /var/www/pws;
+    index index.php;
+
+    location ~ \.php$ {
+	  try_files $fastcgi_script_name =404;
+	  allow 102.68.79.79;
+          deny all;
+	  include fastcgi_params;
+	  fastcgi_pass  unix:/run/php/php8.2-fpm.sock;
+	  fastcgi_index index.php;
+	  fastcgi_param DOCUMENT_ROOT  $realpath_root;
+	  fastcgi_param SCRIPT_FILENAME   $realpath_root$fastcgi_script_name; 
+    }
+
+
+}
