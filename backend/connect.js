@@ -8,3 +8,11 @@ export const db = mysql.createConnection({
   password: process.env.ROOT_PASSWORD,
   database: process.env.DB_NAME,
 });
+
+db.connect(function (err) {
+  if (err) {
+    console.error("Error connecting to database: " + err.stack);
+    return;
+  }
+  console.log("Connected to database as id " + db.threadId);
+});

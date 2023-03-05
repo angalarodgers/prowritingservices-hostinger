@@ -5,7 +5,10 @@ export const makeRequest = axios.create({
 
   withCredentials: true,
   headers: {
+    "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+    "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+    "Access-Control-Allow-Headers":
+      "Origin, Content-Type, X-Auth-Token, Authorization, Accept,charset,boundary,Content-Length",
   },
 });
