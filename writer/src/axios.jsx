@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const makeRequest = axios.create({
-  baseURL: "http://localhost:8880/api/",
+  baseURL: "https://api.prowritingservice.net/api/",
   withCredentials: true,
 });
