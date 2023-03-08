@@ -25,6 +25,7 @@ const About = () => {
             <div className="row">
               <div className="col-md-6">
                 <img
+                  style={{ borderRadius: "10px" }}
                   src="https://source.unsplash.com/600x400/?writing"
                   alt="Writing"
                   className="img-fluid"

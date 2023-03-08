@@ -139,7 +139,7 @@ export const placeInitOrder = (req, res) => {
         req.body.pages,
         req.body.words,
         req.body.price,
-        req.body.deadline,
+        req.body.dt,
       ];
       db.query(q, [values], (err, data) => {
         if (err) return res.status(400).json(err);
@@ -160,7 +160,7 @@ export const placeInitOrder = (req, res) => {
             req.body.pages,
             req.body.words,
             req.body.price,
-            req.body.deadline,
+            req.body.dt,
           ];
           db.query(q, [values], (err, data) => {
             if (err) return res.status(400).json(err);
