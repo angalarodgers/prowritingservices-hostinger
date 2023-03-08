@@ -131,7 +131,7 @@ export const placeInitOrder = (req, res) => {
     if (errSelect) return res.status(400).json(errSelect);
     if (dataSelect.length > 0) {
       const q =
-        "INSERT INTO orders (	`client_id`,	,	`paper_type`,	`academic_level`,	`pages`,	`words`, `price`, `deadline`) VALUES (?)";
+        "INSERT INTO orders (	`client_id`,	`paper_type`,	`academic_level`,	`pages`,	`words`, `price`, `deadline`) VALUES (?)";
       const values = [
         dataSelect[0].id,
         req.body.paper_type,
