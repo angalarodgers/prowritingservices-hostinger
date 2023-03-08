@@ -146,8 +146,8 @@ export const placeInitOrder = (req, res) => {
         return res.status(200).json(data.insertId);
       });
     } else {
-      const q = "INSERT INTO users (`email`, `type`) VALUES (?)";
-      const value = [req.body.email, "client"];
+      const q = "INSERT INTO users (`email`, `password`, `type`) VALUES (?)";
+      const value = [req.body.email, "password", "client"];
       db.query(q, [value], (errInsert, dataInsert) => {
         if (errInsert) return res.status(401).json(errInsert);
         if (dataInsert) {
