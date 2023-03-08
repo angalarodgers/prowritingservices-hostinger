@@ -7,214 +7,116 @@ const Footer = () => {
         <div className=" row">
           <div className="col-md-3 mb-4 ms-auto">
             <div>
-              <a href="https://www.creative-tim.com/product/material-kit">
+              <a href="#">
                 <img
-                  src="../assets/img/logo-ct-dark.png"
+                  src="../images/p-01.png"
                   className="mb-3 footer-logo"
                   alt="main_logo"
                 />
               </a>
-              <h6 className="font-weight-bolder mb-4">EssayCrow</h6>
+              <h6 className="font-weight-bolder mb-4">Pro Writing Service</h6>
             </div>
+          </div>
+
+          <div className="col-md-3 col-sm-6 col-6 mb-4">
             <div>
-              <ul className="d-flex flex-row ms-n3 nav">
+              <ul className="flex-column ms-n3 nav">
                 <li className="nav-item">
-                  <a
-                    className="nav-link pe-1"
-                    href="https://www.facebook.com/CreativeTim"
-                    target="_blank"
-                  >
-                    <i className="fab fa-facebook text-lg opacity-8" />
+                  <a className="nav-link" href="#">
+                    Help with my assignment
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link pe-1"
-                    href="https://twitter.com/creativetim"
-                    target="_blank"
-                  >
-                    <i className="fab fa-twitter text-lg opacity-8" />
+                  <a className="nav-link" href="#">
+                    Write my paper for cheap
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link pe-1"
-                    href="https://dribbble.com/creativetim"
-                    target="_blank"
-                  >
-                    <i className="fab fa-dribbble text-lg opacity-8" />
+                  <a className="nav-link" href="#">
+                    Buy term papers
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link pe-1"
-                    href="https://github.com/creativetimofficial"
-                    target="_blank"
-                  >
-                    <i className="fab fa-github text-lg opacity-8" />
+                  <a className="nav-link" href="#">
+                    Write my coursework
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link pe-1"
-                    href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
-                    target="_blank"
-                  >
-                    <i className="fab fa-youtube text-lg opacity-8" />
+                  <a className="nav-link" href="#">
+                    Critical thinking writing services
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="col-md-2 col-sm-6 col-6 mb-4">
+          <div className="col-md-3 col-sm-6 col-6 mb-4">
             <div>
-              <h6 className="text-sm">Company</h6>
               <ul className="flex-column ms-n3 nav">
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/presentation"
-                    target="_blank"
-                  >
-                    About Us
+                  <a className="nav-link" href="#">
+                    Paper with powerpoint presentation
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/templates/free"
-                    target="_blank"
-                  >
-                    Freebies
+                  <a className="nav-link" href="#">
+                    Speech writing help
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/templates/premium"
-                    target="_blank"
-                  >
-                    Premium Tools
+                  <a className="nav-link" href="#">
+                    Write my coursework
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/blog"
-                    target="_blank"
-                  >
-                    Blog
+                  <a className="nav-link" href="#">
+                    Need my research paper done
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Research paper for sale
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Personal statement writing services
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="col-md-2 col-sm-6 col-6 mb-4">
+          <div className="col-md-3 col-sm-6 col-6 mb-4 me-auto">
             <div>
-              <h6 className="text-sm">Resources</h6>
               <ul className="flex-column ms-n3 nav">
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://iradesign.io/"
-                    target="_blank"
-                  >
-                    Illustrations
+                  <a className="nav-link" href="#">
+                    Help with creative writing assignment
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/bits"
-                    target="_blank"
-                  >
-                    Bits &amp; Snippets
+                  <a className="nav-link" href="#">
+                    Write my book review
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/affiliates/new"
-                    target="_blank"
-                  >
-                    Affiliate Program
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-md-2 col-sm-6 col-6 mb-4">
-            <div>
-              <h6 className="text-sm">Help &amp; Support</h6>
-              <ul className="flex-column ms-n3 nav">
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/contact-us"
-                    target="_blank"
-                  >
-                    Contact Us
+                  <a className="nav-link" href="#">
+                    Essay writing help
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/knowledge-center"
-                    target="_blank"
-                  >
-                    Knowledge Center
+                  <a className="nav-link" href="#">
+                    Buy custom essay for cheap
+                  </a>
+                </li>
+
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Philosophy writing help
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://services.creative-tim.com/?ref=ct-mk2-footer"
-                    target="_blank"
-                  >
-                    Custom Development
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/sponsorships"
-                    target="_blank"
-                  >
-                    Sponsorships
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-md-2 col-sm-6 col-6 mb-4 me-auto">
-            <div>
-              <h6 className="text-sm">Legal</h6>
-              <ul className="flex-column ms-n3 nav">
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/knowledge-center/terms-of-service"
-                    target="_blank"
-                  >
-                    Terms &amp; Conditions
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/knowledge-center/privacy-policy"
-                    target="_blank"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="https://www.creative-tim.com/license"
-                    target="_blank"
-                  >
-                    Licenses (EULA)
+                  <a className="nav-link" href="#">
+                    Our academic writing ethics
                   </a>
                 </li>
               </ul>
@@ -223,11 +125,8 @@ const Footer = () => {
           <div className="col-12">
             <div className="text-center">
               <p className="text-dark my-4 text-sm font-weight-normal">
-                All rights reserved. Copyright © ProWritingServices by{" "}
-                <a href="#" target="_blank">
-                  ANG
-                </a>
-                .
+                <a href="#">Privacy Policy</a> &nbsp;{" "}
+                <a href="#">Refund Policy</a>
               </p>
             </div>
           </div>

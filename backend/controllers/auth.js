@@ -124,3 +124,28 @@ export const logout = async (req, res) => {
     .status(200)
     .json("User has been logged out!");
 };
+
+export const addOrder = (req, res) => {
+  const q = "SELECT * FROM users WHERE `email` = ? ";
+  db.query(q, [req.body.email], (errSelect, dataSelect) => {
+    if (errSelect) return res.status(400).json(errSelect);
+    if (dataSelect.length > 0) {
+      const q =
+        "INSERT INTO orders (	`client_id`,	`topic`,	`paper_type`,	`discipline`,	`academic_level`,	`paper_instructions`,	`pages`,	`words`,	`spacing`,	`service`,	`style`, `price`, `deadline`) VALUES (?)";
+      const values = [
+        dataSelect[0].id,
+        req.body.paper_type,
+        req.body.academic_level,
+        req.body.pages,
+        req.body.words,
+        req.body.price,
+        req.body.deadline,
+      ];
+      db.query(q, [values], (err, data) => {
+        if (err) return res.status(500).json(err);
+        return res.status(200).json(data.insertId);
+      });
+    } else {
+    }
+  });
+};

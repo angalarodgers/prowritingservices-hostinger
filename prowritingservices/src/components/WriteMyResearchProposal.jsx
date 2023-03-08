@@ -7,37 +7,43 @@ const WriteMyResearchProposal = () => {
         <div className="col-md-12">
           <div className="info">
             <h3>Write My Research Proposal</h3>
-            <h5>Looking for an expert to work on your assignment?</h5>
+            <strong>Meta Description</strong>
+            <h5>
+              Are you looking for custom research proposal writing services?
+              Look no further. Get professional help from our expert research
+              proposal writers today.
+            </h5>
+            <strong>Text</strong>
             <p>
-              We have an excelent team of experienced technical writers to
-              assist you at any time. Share paper instructions with our writers.
-              Sit back and wait for the complete paper.
+              If you're struggling to write a research proposal that will get
+              your professors' attention, our Pro Writing Services team is here
+              to help. Crafting the best research proposal can be challenging,
+              especially when it's your first time or has a lot on your plate.
             </p>
           </div>
         </div>
       </div>
       <div className="row justify-content-start mt-4">
-        <div className="col-md-6">
+        <div className="col-md-12">
           <div className="info">
             <i className="material-icons text-3xl text-gradient text-info mb-3">
               add
             </i>
-            <h5>Share instructions</h5>
+
             <p>
-              Our writers are always available. Share your instructions with our
-              writers and specify your deadline.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="info">
-            <i className="material-icons text-3xl text-gradient text-info mb-3">
-              3p
-            </i>
-            <h5>Wait for your paper</h5>
-            <p>
-              Sit back and wait for your paper. Keep track of progress. Chat
-              with our writer at any time.
+              <div className="row">
+                <div className="col-sm-4">
+                  {" "}
+                  <button type="button" className="btn bg-gradient-warning">
+                    Read More...
+                  </button>
+                </div>
+                <div className="col-sm-6">
+                  <button type="button" className="btn bg-gradient-warning">
+                    Write My Research Proposal
+                  </button>
+                </div>
+              </div>
             </p>
           </div>
         </div>

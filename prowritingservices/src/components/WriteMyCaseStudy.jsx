@@ -7,37 +7,44 @@ const WriteMyCaseStudy = () => {
         <div className="col-md-12">
           <div className="info">
             <h3>Write My Case Study</h3>
-            <h5>Looking for an expert to work on your assignment?</h5>
+            <strong>Meta Description:</strong>
+            <h5>
+              Are you looking for case study writing assistance? Our team of
+              academic writers offers professional and customized case studies
+              tailored to your unique needs.
+            </h5>
+            <strong>Text</strong>
             <p>
-              We have an excelent team of experienced technical writers to
-              assist you at any time. Share paper instructions with our writers.
-              Sit back and wait for the complete paper.
+              At Pro Writing Services, we offer customized case study writing
+              services designed to meet your unique needs. Whether you are
+              looking for guidance on how to write a case study or need help
+              with the entire case study design, we would love to help. We offer
+              a wide range of services, including in-depth case study research,
+              data analysis, writing and editing, formatting, and proofreading.
             </p>
           </div>
         </div>
       </div>
       <div className="row justify-content-start mt-4">
-        <div className="col-md-6">
+        <div className="col-md-12">
           <div className="info">
             <i className="material-icons text-3xl text-gradient text-info mb-3">
               add
             </i>
-            <h5>Share instructions</h5>
             <p>
-              Our writers are always available. Share your instructions with our
-              writers and specify your deadline.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="info">
-            <i className="material-icons text-3xl text-gradient text-info mb-3">
-              3p
-            </i>
-            <h5>Wait for your paper</h5>
-            <p>
-              Sit back and wait for your paper. Keep track of progress. Chat
-              with our writer at any time.
+              <div className="row">
+                <div className="col-sm-4">
+                  {" "}
+                  <button type="button" className="btn bg-gradient-warning">
+                    Read More...
+                  </button>
+                </div>
+                <div className="col-sm-6">
+                  <button type="button" className="btn bg-gradient-warning">
+                    Write My Case Study
+                  </button>
+                </div>
+              </div>
             </p>
           </div>
         </div>

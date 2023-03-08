@@ -6,38 +6,43 @@ const Thesis = () => {
       <div className="row justify-content-start">
         <div className="col-md-12">
           <div className="info">
-            <h3>Write My Thesis Disemination</h3>
-            <h5>Looking for an expert to work on your assignment?</h5>
+            <h3>Write My Thesis and Dissertation</h3>
+            <strong>Meta Description:</strong>
+            <h5>
+              Are you in need of professional thesis and dissertation writing
+              assistance? Our expert team of academic writers is ready to help!
+            </h5>
+            <strong>Text</strong>
             <p>
-              We have an excelent team of experienced technical writers to
-              assist you at any time. Share paper instructions with our writers.
-              Sit back and wait for the complete paper.
+              Welcome to Pro Writing Services, the best academic writing website
+              that offers you a wide range of quality and customized assignment
+              help. Whether you're a graduate student or a doctoral candidate
+              looking for help with thesis or dissertation work, we've you
+              covered.
             </p>
           </div>
         </div>
       </div>
       <div className="row justify-content-start mt-4">
-        <div className="col-md-6">
+        <div className="col-md-12">
           <div className="info">
             <i className="material-icons text-3xl text-gradient text-info mb-3">
               add
             </i>
-            <h5>Share instructions</h5>
             <p>
-              Our writers are always available. Share your instructions with our
-              writers and specify your deadline.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="info">
-            <i className="material-icons text-3xl text-gradient text-info mb-3">
-              3p
-            </i>
-            <h5>Wait for your paper</h5>
-            <p>
-              Sit back and wait for your paper. Keep track of progress. Chat
-              with our writer at any time.
+              <div className="row">
+                <div className="col-sm-4">
+                  {" "}
+                  <button type="button" className="btn bg-gradient-warning">
+                    Read More...
+                  </button>
+                </div>
+                <div className="col-sm-6">
+                  <button type="button" className="btn bg-gradient-warning">
+                    Write My Thesis and Dissertation
+                  </button>
+                </div>
+              </div>
             </p>
           </div>
         </div>

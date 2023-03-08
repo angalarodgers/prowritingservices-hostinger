@@ -30,7 +30,7 @@
   --bs-primary: #e91e63;
   --bs-secondary: #7b809a;
   --bs-success: #4caf50;
-  --bs-info: #1a73e8;
+  --bs-info: #f27127;
   --bs-warning: #fb8c00;
   --bs-danger: #f44335;
   --bs-light: #f0f2f5;
@@ -3725,8 +3725,8 @@ fieldset:disabled .btn {
 
 .btn-info {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1a73e8;
-  --bs-btn-border-color: #1a73e8;
+  --bs-btn-bg: #f27127;
+  --bs-btn-border-color: #f27127;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #1662c5;
   --bs-btn-hover-border-color: #155cba;
@@ -3736,8 +3736,8 @@ fieldset:disabled .btn {
   --bs-btn-active-border-color: #1456ae;
   --bs-btn-active-shadow: none;
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #1a73e8;
-  --bs-btn-disabled-border-color: #1a73e8;
+  --bs-btn-disabled-bg: #f27127;
+  --bs-btn-disabled-border-color: #f27127;
 }
 
 .btn-warning {
@@ -3874,17 +3874,17 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-info {
-  --bs-btn-color: #1a73e8;
-  --bs-btn-border-color: #1a73e8;
+  --bs-btn-color: #f27127;
+  --bs-btn-border-color: #f27127;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1a73e8;
-  --bs-btn-hover-border-color: #1a73e8;
+  --bs-btn-hover-bg: #f27127;
+  --bs-btn-hover-border-color: #f27127;
   --bs-btn-focus-shadow-rgb: 26, 115, 232;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1a73e8;
-  --bs-btn-active-border-color: #1a73e8;
+  --bs-btn-active-bg: #f27127;
+  --bs-btn-active-border-color: #f27127;
   --bs-btn-active-shadow: none;
-  --bs-btn-disabled-color: #1a73e8;
+  --bs-btn-disabled-color: #f27127;
   --bs-btn-disabled-bg: transparent;
   --bs-gradient: none;
 }
@@ -8110,7 +8110,7 @@ fieldset:disabled .btn {
 }
 
 .link-info {
-  color: #1a73e8 !important;
+  color: #f27127 !important;
 }
 
 .link-info:hover,
@@ -8800,7 +8800,7 @@ fieldset:disabled .btn {
 }
 
 .border-info {
-  border-color: #1a73e8 !important;
+  border-color: #f27127 !important;
 }
 
 .border-warning {
@@ -10609,7 +10609,7 @@ fieldset:disabled .btn {
 }
 
 .text-info {
-  color: #1a73e8 !important;
+  color: #f27127 !important;
 }
 
 .text-warning {
@@ -10685,7 +10685,7 @@ fieldset:disabled .btn {
 }
 
 .bg-info {
-  background-color: #1a73e8 !important;
+  background-color: #f27127 !important;
 }
 
 .bg-warning {
@@ -20275,7 +20275,7 @@ fieldset:disabled .btn {
 }
 
 .alert-info {
-  background-image: linear-gradient(195deg, #49a3f1 0%, #1a73e8 100%);
+  background-image: linear-gradient(195deg, #f28322 0%, #f27127 100%);
 }
 
 .alert-warning {
@@ -20410,7 +20410,7 @@ fieldset:disabled .btn {
 }
 
 .badge.bg-info {
-  background: #1a73e8;
+  background: #f27127;
 }
 
 .badge.bg-warning {
@@ -20699,8 +20699,8 @@ fieldset:disabled .btn {
 
 .btn-info:hover,
 .btn.bg-gradient-info:hover {
-  background-color: #1a73e8;
-  border-color: #1a73e8;
+  background-color: #f27127;
+  border-color: #f27127;
   box-shadow: 0 14px 26px -12px rgba(26, 115, 232, 0.4),
     0 4px 23px 0 rgba(26, 115, 232, 0.15),
     0 8px 10px -5px rgba(26, 115, 232, 0.2);
@@ -20708,7 +20708,7 @@ fieldset:disabled .btn {
 
 .btn-info .btn.bg-outline-info,
 .btn.bg-gradient-info .btn.bg-outline-info {
-  border: 1px solid #1a73e8;
+  border: 1px solid #f27127;
 }
 
 .btn-info:not(:disabled):not(.disabled).active,
@@ -20717,8 +20717,8 @@ fieldset:disabled .btn {
 .btn.bg-gradient-info:not(:disabled):not(.disabled).active,
 .btn.bg-gradient-info:not(:disabled):not(.disabled):active,
 .show > .btn.bg-gradient-info.dropdown-toggle {
-  color: color-yiq(#1a73e8);
-  background-color: #1a73e8;
+  color: color-yiq(#f27127);
+  background-color: #f27127;
 }
 
 .btn-info.focus,
@@ -20736,7 +20736,7 @@ fieldset:disabled .btn {
   background-color: transparent;
   opacity: 0.75;
   box-shadow: none;
-  color: #1a73e8;
+  color: #f27127;
 }
 
 .btn-warning,
@@ -21235,7 +21235,7 @@ fieldset:disabled .btn {
 }
 
 .card.card-background.card-background-mask-info:after {
-  background-image: linear-gradient(195deg, #49a3f1 0%, #1a73e8 100%);
+  background-image: linear-gradient(195deg, #f28322 0%, #f27127 100%);
   opacity: 0.85;
 }
 
@@ -22721,7 +22721,7 @@ label,
 }
 
 .bg-gradient-info {
-  background-image: linear-gradient(195deg, #49a3f1 0%, #1a73e8 100%);
+  background-image: linear-gradient(195deg, #f28322 0%, #f27127 100%);
 }
 
 .bg-gradient-warning {
@@ -22840,7 +22840,7 @@ label,
   background-image: radial-gradient(
     200px circle at 50% 70%,
     rgba(26, 115, 232, 0.3) 0,
-    #1a73e8 100%
+    #f27127 100%
   );
 }
 
@@ -23050,11 +23050,11 @@ svg.text-secondary .color-background {
 }
 
 svg.text-info .color-foreground {
-  fill: #49a3f1;
+  fill: #f28322;
 }
 
 svg.text-info .color-background {
-  fill: #1a73e8;
+  fill: #f27127;
 }
 
 svg.text-warning .color-foreground {
@@ -23169,7 +23169,7 @@ html {
 *.gradient-animation {
   background: linear-gradient(
     -45deg,
-    #49a3f1,
+    #f28322,
     #f44335,
     #fb8c00,
     #20c997,
@@ -24523,7 +24523,7 @@ hr.horizontal.gray-light {
   + .collapsing
   .nav-item.active
   .nav-link.active {
-  background-image: linear-gradient(195deg, #1a73e8 0%, #1a73e8 100%);
+  background-image: linear-gradient(195deg, #f27127 0%, #f27127 100%);
 }
 
 .sidenav[data-color="info"]
@@ -24563,7 +24563,7 @@ hr.horizontal.gray-light {
   + .collapse
   .nav-item
   .nav-link.active {
-  background-image: linear-gradient(195deg, #1a73e8 0%, #1a73e8 100%);
+  background-image: linear-gradient(195deg, #f27127 0%, #f27127 100%);
 }
 
 .sidenav[data-color="warning"]
@@ -25522,8 +25522,8 @@ body:not(.dark-version)
 }
 
 .nav.nav-pills.nav-pills-info .moving-tab .nav-link.active {
-  background: #49a3f1;
-  color: #49a3f1;
+  background: #f28322;
+  color: #f28322;
 }
 
 .nav.nav-pills.nav-pills-success {
@@ -25651,7 +25651,7 @@ body:not(.dark-version)
 .pagination.pagination-info .page-item.active > .page-link,
 .pagination.pagination-info .page-item.active > .page-link:focus,
 .pagination.pagination-info .page-item.active > .page-link:hover {
-  background-image: linear-gradient(195deg, #49a3f1 0%, #1a73e8 100%);
+  background-image: linear-gradient(195deg, #f28322 0%, #f27127 100%);
   border: none;
 }
 
@@ -26857,7 +26857,7 @@ p {
 }
 
 .text-gradient.text-info {
-  background-image: linear-gradient(195deg, #49a3f1, #1a73e8);
+  background-image: linear-gradient(195deg, #f28322, #f27127);
 }
 
 .text-gradient.text-success {

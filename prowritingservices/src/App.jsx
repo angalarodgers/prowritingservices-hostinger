@@ -18,6 +18,14 @@ import WriteMyResearchProposal from "./components/WriteMyResearchProposal";
 import WriteMyResearchPaper from "./components/WriteMyResearchPaper";
 import WriteMyCaseStudy from "./components/WriteMyCaseStudy";
 import Thesis from "./components/Thesis";
+import LabReport from "./components/LabReport";
+import LiteratureReview from "./components/LiteratureReview";
+import OpinionArticle from "./components/OpinionArticle";
+import ArticleReview from "./components/ArticleReview";
+import HowItWorks from "./constants/HowItWorks";
+import WhyChooseUs from "./constants/WhyChooseUs";
+import Pricing from "./constants/Pricing";
+import Faq from "./pages/faq/Faq";
 
 function App() {
   const Layout = () => {
@@ -38,6 +46,9 @@ function App() {
               </div>
             </div>
           </section>
+          <HowItWorks />
+          <WhyChooseUs />
+          <Pricing />
         </div>
 
         <Footer />
@@ -74,12 +85,32 @@ function App() {
           path: "/writer-my-thesis-dissertation",
           element: <Thesis />,
         },
+        {
+          path: "/writer-my-lab-report",
+          element: <LabReport />,
+        },
+        {
+          path: "/writer-my-literature-review",
+          element: <LiteratureReview />,
+        },
+        {
+          path: "/writer-my-opinion-article",
+          element: <OpinionArticle />,
+        },
+        {
+          path: "/writer-my-article-review",
+          element: <ArticleReview />,
+        },
       ],
     },
 
     {
-      path: "/about",
+      path: "/about-us",
       element: <About />,
+    },
+    {
+      path: "/faq",
+      element: <Faq />,
     },
   ]);
 

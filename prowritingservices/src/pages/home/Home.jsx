@@ -17,28 +17,11 @@ const Home = () => {
         </div>
       </div>
       <div className="row justify-content-start mt-4">
-        <div className="col-md-6">
+        <div className="col-md-12">
           <div className="info">
-            <i className="material-icons text-3xl text-gradient text-info mb-3">
-              add
-            </i>
-            <h5>Share instructions</h5>
-            <p>
-              Our writers are always available. Share your instructions with our
-              writers and specify your deadline.
-            </p>
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="info">
-            <i className="material-icons text-3xl text-gradient text-info mb-3">
-              3p
-            </i>
-            <h5>Wait for your paper</h5>
-            <p>
-              Sit back and wait for your paper. Keep track of progress. Chat
-              with our writer at any time.
-            </p>
+            <button type="button" className="btn btn-warning">
+              Order My Paper
+            </button>
           </div>
         </div>
       </div>

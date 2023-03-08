@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const OrderInit = () => {
-  const [wrd, setWrd] = useState(1);
-  const [prs, setPrs] = useState(1);
+  const [wrd, setWrd] = useState(275);
+  const [prs, setPrs] = useState(13);
   const [err, setErr] = useState("");
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0 });
   const [inputs, setInputs] = useState({
+    email: "",
     paper_type: "",
     academic_level: "",
     dt: "",
@@ -16,6 +19,23 @@ const OrderInit = () => {
     words: wrd,
     time_left: "",
   });
+
+  useEffect(() => {
+    if (inputs.dt.length > 0) {
+      const targetDate = new Date(inputs.dt);
+      const interval = setInterval(() => {
+        const now = new Date().getTime();
+        const timeDiff = targetDate - now;
+        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        setTimeLeft({ days, hours });
+      }, 1000);
+
+      return () => clearInterval(interval);
+    }
+  }, [inputs.dt]);
 
   const handleChange = (e) => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -36,7 +56,9 @@ const OrderInit = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (inputs.paper_type.length === 0) {
+    if (inputs.email.length === 0) {
+      toast.error("User Email Required!");
+    } else if (inputs.paper_type.length === 0) {
       toast.error("Paper Type Required!");
     } else if (inputs.academic_level.length === 0) {
       toast.error("Academic Level Required!");
@@ -47,14 +69,27 @@ const OrderInit = () => {
     } else {
       setErr("");
       localStorage.setItem("init_order", JSON.stringify(inputs));
-      toast.success("Registered Successfully!");
-      await sleep(3000);
-      navigate("http://localhost:5174/login");
+
+      try {
+        const res = await axios.post(
+          "https://api.prowritingservice.net/api/auth/placeInitOrder",
+          inputs
+        );
+        console.log(res);
+        if (res.status === 200) {
+          toast.success("Registered Successfully!");
+          await sleep(3000);
+          navigate("/dashboard");
+        }
+      } catch (error) {
+        toast.error("Error Ocured!");
+        console.log(error);
+      }
     }
   };
 
   return (
-    <div className="col-lg-4 ms-auto mt-lg-0 mt-4">
+    <div className="col-lg-4 ms-auto mt-lg-0 mt-4 mb-5" style={{ top: "0px" }}>
       <div className="card">
         {/* <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
         <a className="d-block blur-shadow-image">
@@ -71,7 +106,17 @@ const OrderInit = () => {
           </h5>
           <p className="mb-0">
             <form action="">
-              <div className="input-group input-group-static mb-4">
+              <div className="input-group input-group-static">
+                <label>Email</label>
+                <input
+                  className="form-control"
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  value={inputs.email}
+                />
+              </div>
+              <div className="input-group input-group-static">
                 <label>Type Of Paper</label>
                 <select
                   name="paper_type"
@@ -128,7 +173,7 @@ const OrderInit = () => {
                 </select>
               </div>
 
-              <div className="input-group input-group-static mb-4">
+              <div className="input-group input-group-static">
                 <label>Academic Level</label>
                 <select
                   name="academic_level"
@@ -136,7 +181,7 @@ const OrderInit = () => {
                   className="form-control"
                   onChange={handleChange}
                 >
-                  <option value="">Select...</option>
+                  <option value="">Select Academic Level...</option>
                   <option value={"High School"}>High School</option>
                   <option value={"College"}>College</option>
                   <option value={"Undergraduate"}>Undergraduate</option>
@@ -146,8 +191,8 @@ const OrderInit = () => {
               </div>
               <div className="row">
                 <div className="col">
-                  <div className="input-group input-group-outline mb-4">
-                    <label className="form-label">Pages</label>
+                  <div className="input-group input-group-static ">
+                    <label>Pages</label>
                     <input
                       className="form-control"
                       type="number"
@@ -158,8 +203,8 @@ const OrderInit = () => {
                   </div>
                 </div>
                 <div className="col">
-                  <div className="input-group input-group-outline mb-4">
-                    <label className="form-label">Words</label>
+                  <div className="input-group input-group-static">
+                    <label>Words</label>
                     <input
                       className="form-control"
                       type="text"
@@ -172,7 +217,7 @@ const OrderInit = () => {
               </div>
               <div className="row">
                 <div className="col-sm-6">
-                  <div className="input-group input-group-static mb-4">
+                  <div className="input-group input-group-static">
                     <label>Deadline</label>
                     <input
                       className="form-control"
@@ -184,28 +229,32 @@ const OrderInit = () => {
                   </div>
                 </div>
                 <div className="col-sm-6">
-                  <div className="input-group input-group-static mb-4">
+                  <div className="input-group input-group-static mb-1 ">
                     <label>Time Left</label>
                     <input
                       className="form-control"
                       type="text"
                       onChange={handleChange}
-                      value={inputs.time_left}
+                      value={
+                        timeLeft.days + " Days and " + timeLeft.hours + " Hours"
+                      }
                     />
                   </div>
                 </div>
               </div>
-              <div className="input-group input-group-static mb-2 d-flex justify-content-center">
+              <div className="input-group input-group-static mb-1 d-flex justify-content-center">
                 <label>
-                  Estimate Price : <strong>${prs}</strong>
+                  Estimate Price :{" "}
+                  <strong style={{ color: "green" }}>${prs}</strong>
                 </label>
               </div>
             </form>
           </p>
           <button
             type="button"
-            className="btn bg-gradient-info btn-sm mb-0 mt-3"
+            className="btn bg-warning btn-sm mb-0 mt-3"
             onClick={handleSubmit}
+            style={{ color: "white" }}
           >
             Place Your Order
           </button>

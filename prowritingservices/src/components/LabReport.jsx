@@ -1,26 +1,23 @@
 import React from "react";
 
-const WriteMyEssay = () => {
+const LabReport = () => {
   return (
     <div className="col-lg-6">
       <div className="row justify-content-start">
         <div className="col-md-12">
           <div className="info">
-            <h3>Write My Essay</h3>
-            <strong>Meta Description</strong> <br />
+            <h3>Write My Lab Report</h3>
+            <strong>Meta Description:</strong>
             <h5>
-              Get quality essay writing assistance from our experienced writers.
-              We specialize in online essay writing, including custom essays,
-              research papers, and more.{" "}
+              Get custom lab report writing assistance from our professional lab
+              report writers at Pro Writing Services. Make your order today!
             </h5>
             <strong>Text</strong>
             <p>
-              Welcome to Pro Writing Service, the best essay writing service
-              online! If you're looking for top-quality writing assistance for
-              your college essays, you've come to the right place. We understand
-              that writing essays can be daunting, especially when juggling
-              multiple assignments and deadlines. That's why we're here to help
-              you with all your essay writing needs.
+              Welcome to Pro Writing Services, your one-stop solution for all
+              your academic writing needs. If you are running out of time and
+              need professional assistance with your lab reports, our team of
+              experienced lab report writers is ready to help.
             </p>
           </div>
         </div>
@@ -41,7 +38,7 @@ const WriteMyEssay = () => {
                 </div>
                 <div className="col-sm-6">
                   <button type="button" className="btn bg-gradient-warning">
-                    Write My Essay
+                    Write My Lab Report
                   </button>
                 </div>
               </div>
@@ -53,4 +50,4 @@ const WriteMyEssay = () => {
   );
 };
 
-export default WriteMyEssay;
+export default LabReport;

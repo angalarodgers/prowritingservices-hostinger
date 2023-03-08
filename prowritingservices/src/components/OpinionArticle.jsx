@@ -1,26 +1,24 @@
 import React from "react";
 
-const WriteMyEssay = () => {
+const OpinionArticle = () => {
   return (
     <div className="col-lg-6">
       <div className="row justify-content-start">
         <div className="col-md-12">
           <div className="info">
-            <h3>Write My Essay</h3>
-            <strong>Meta Description</strong> <br />
+            <h3>Write My Opinion Article</h3>
+            <strong>Meta Description:</strong>
             <h5>
-              Get quality essay writing assistance from our experienced writers.
-              We specialize in online essay writing, including custom essays,
-              research papers, and more.{" "}
+              Are you in need of opinion article writing services? Let our
+              writers help you express your thoughts and ideas effectively.
             </h5>
             <strong>Text</strong>
             <p>
-              Welcome to Pro Writing Service, the best essay writing service
-              online! If you're looking for top-quality writing assistance for
-              your college essays, you've come to the right place. We understand
-              that writing essays can be daunting, especially when juggling
-              multiple assignments and deadlines. That's why we're here to help
-              you with all your essay writing needs.
+              If you are feeling overwhelmed by your academic workload or are
+              struggling to complete your assignments, we are ready to help. Our
+              team at Pro Writing services offers professional writing services,
+              and we would love to help you write a unique and engaging opinion
+              article.
             </p>
           </div>
         </div>
@@ -41,7 +39,7 @@ const WriteMyEssay = () => {
                 </div>
                 <div className="col-sm-6">
                   <button type="button" className="btn bg-gradient-warning">
-                    Write My Essay
+                    Write My Opinion Article
                   </button>
                 </div>
               </div>
@@ -53,4 +51,4 @@ const WriteMyEssay = () => {
   );
 };
 
-export default WriteMyEssay;
+export default OpinionArticle;

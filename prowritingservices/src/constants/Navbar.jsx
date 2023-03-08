@@ -9,11 +9,10 @@ const Navbar = () => {
       >
         <a
           className="navbar-brand  text-white "
-          href="https://demos.creative-tim.com/material-kit/presentation"
+          href="#"
           rel="tooltip"
           title="Designed and Coded by Creative Tim"
           data-placement="bottom"
-          target="_blank"
         >
           ProWritingServices
         </a>
@@ -64,43 +63,31 @@ const Navbar = () => {
                 aria-labelledby="dropdownMenuPages8"
               >
                 <div className="d-none d-lg-block">
-                  <a
-                    href="../pages/author.html"
-                    className="dropdown-item border-radius-md"
-                  >
+                  <a href="./" className="dropdown-item border-radius-md">
                     <span>Home</span>
                   </a>
                   <a
-                    href="../pages/about-us.html"
+                    href="./about-us"
                     className="dropdown-item border-radius-md"
                   >
                     <span>About Us</span>
                   </a>
-                  <a
-                    href="../pages/contact-us.html"
-                    className="dropdown-item border-radius-md"
-                  >
-                    <span>Contact Us</span>
+                  <a href="./faq" className="dropdown-item border-radius-md">
+                    <span>F.A.Q</span>
                   </a>
                 </div>
                 <div className="d-lg-none">
-                  <a
-                    href="../pages/author.html"
-                    className="dropdown-item border-radius-md"
-                  >
+                  <a href="./" className="dropdown-item border-radius-md">
                     <span>Home</span>
                   </a>
                   <a
-                    href="../pages/about-us.html"
+                    href="./about-us"
                     className="dropdown-item border-radius-md"
                   >
                     <span>About Us</span>
                   </a>
-                  <a
-                    href="../pages/contact-us.html"
-                    className="dropdown-item border-radius-md"
-                  >
-                    <span>Contact Us</span>
+                  <a href="./faq" className="dropdown-item border-radius-md">
+                    <span>F.A.Q</span>
                   </a>
                 </div>
               </div>
@@ -143,11 +130,6 @@ const Navbar = () => {
                             Write My Essay
                           </h6>
                         </div>
-                        <img
-                          src="../assets/img/down-arrow.svg"
-                          alt="down-arrow"
-                          className="arrow"
-                        />
                       </div>
                     </a>
                   </li>
@@ -162,11 +144,6 @@ const Navbar = () => {
                             Write My Research Proposal
                           </h6>
                         </div>
-                        <img
-                          src="../assets/img/down-arrow.svg"
-                          alt="down-arrow"
-                          className="arrow"
-                        />
                       </div>
                     </a>
                   </li>
@@ -181,11 +158,6 @@ const Navbar = () => {
                             Write My Research Paper
                           </h6>
                         </div>
-                        <img
-                          src="../assets/img/down-arrow.svg"
-                          alt="down-arrow"
-                          className="arrow"
-                        />
                       </div>
                     </a>
                   </li>
@@ -200,11 +172,6 @@ const Navbar = () => {
                             Write My Case Study
                           </h6>
                         </div>
-                        <img
-                          src="../assets/img/down-arrow.svg"
-                          alt="down-arrow"
-                          className="arrow"
-                        />
                       </div>
                     </a>
                   </li>
@@ -219,11 +186,62 @@ const Navbar = () => {
                             Write My Thesis Dissertation
                           </h6>
                         </div>
-                        <img
-                          src="../assets/img/down-arrow.svg"
-                          alt="down-arrow"
-                          className="arrow"
-                        />
+                      </div>
+                    </a>
+                  </li>
+                  <li className="nav-item dropdown dropdown-hover dropdown-subitem">
+                    <a
+                      className="dropdown-item py-2 ps-3 border-radius-md"
+                      href="./writer-my-lab-report"
+                    >
+                      <div className="w-100 d-flex align-items-center justify-content-between">
+                        <div>
+                          <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                            Write My Lab Report
+                          </h6>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="nav-item dropdown dropdown-hover dropdown-subitem">
+                    <a
+                      className="dropdown-item py-2 ps-3 border-radius-md"
+                      href="./writer-my-literature-review"
+                    >
+                      <div className="w-100 d-flex align-items-center justify-content-between">
+                        <div>
+                          <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                            Write My Literature Review
+                          </h6>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="nav-item dropdown dropdown-hover dropdown-subitem">
+                    <a
+                      className="dropdown-item py-2 ps-3 border-radius-md"
+                      href="./writer-my-opinion-article"
+                    >
+                      <div className="w-100 d-flex align-items-center justify-content-between">
+                        <div>
+                          <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                            Write My Opinion Article
+                          </h6>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="nav-item dropdown dropdown-hover dropdown-subitem">
+                    <a
+                      className="dropdown-item py-2 ps-3 border-radius-md"
+                      href="./writer-my-article-review"
+                    >
+                      <div className="w-100 d-flex align-items-center justify-content-between">
+                        <div>
+                          <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                            Write My Article Review
+                          </h6>
+                        </div>
                       </div>
                     </a>
                   </li>
@@ -231,173 +249,139 @@ const Navbar = () => {
                 <div className="row d-lg-none">
                   <div className="col-md-12">
                     <div className="d-flex mb-2">
-                      <div className="icon h-10 me-3 d-flex mt-1">
-                        <i className="ni ni-single-copy-04 text-gradient text-primary" />
-                      </div>
-                      <div className="w-100 d-flex align-items-center justify-content-between">
-                        <div>
-                          <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Page Sections
-                          </h6>
+                      <a
+                        className="dropdown-item py-2 ps-3 border-radius-md"
+                        href="./writer-my-essay"
+                      >
+                        <div className="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Write My Essay
+                            </h6>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/page-sections/hero-sections.html"
-                    >
-                      Page Headers
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/page-sections/features.html"
-                    >
-                      Features
-                    </a>
+
                     <div className="d-flex mb-2 mt-3">
-                      <div className="icon h-10 me-3 d-flex mt-1">
-                        <i className="ni ni-laptop text-gradient text-primary" />
-                      </div>
-                      <div className="w-100 d-flex align-items-center justify-content-between">
-                        <div>
-                          <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Navigation
-                          </h6>
+                      <a
+                        className="dropdown-item py-2 ps-3 border-radius-md"
+                        href="./writer-my-research-proposal"
+                      >
+                        <div className="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Write My Research Proposal
+                            </h6>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/navigation/navbars.html"
-                    >
-                      Navbars
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/navigation/nav-tabs.html"
-                    >
-                      Nav Tabs
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/navigation/pagination.html"
-                    >
-                      Pagination
-                    </a>
+
                     <div className="d-flex mb-2 mt-3">
-                      <div className="icon h-10 me-3 d-flex mt-1">
-                        <i className="ni ni-badge text-gradient text-primary" />
-                      </div>
-                      <div className="w-100 d-flex align-items-center justify-content-between">
-                        <div>
-                          <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Input Areas
-                          </h6>
+                      <a
+                        className="dropdown-item py-2 ps-3 border-radius-md"
+                        href="./writer-my-research-paper"
+                      >
+                        <div className="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Write My Research Paper
+                            </h6>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/input-areas/inputs.html"
-                    >
-                      Inputs
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/input-areas/forms.html"
-                    >
-                      Forms
-                    </a>
+
                     <div className="d-flex mb-2 mt-3">
-                      <div className="icon h-10 me-3 d-flex mt-1">
-                        <i className="ni ni-notification-70 text-gradient text-primary" />
-                      </div>
-                      <div className="w-100 d-flex align-items-center justify-content-between">
-                        <div>
-                          <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Attention Catchers
-                          </h6>
+                      <a
+                        className="dropdown-item py-2 ps-3 border-radius-md"
+                        href="./writer-my-case-study"
+                      >
+                        <div className="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Write My Case Study
+                            </h6>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/attention-catchers/alerts.html"
-                    >
-                      Alerts
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/attention-catchers/modals.html"
-                    >
-                      Modals
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/attention-catchers/tooltips-popovers.html"
-                    >
-                      Tooltips &amp; Popovers
-                    </a>
+
                     <div className="d-flex mb-2 mt-3">
-                      <div className="icon h-10 me-3 d-flex mt-1">
-                        <i className="ni ni-app text-gradient text-primary" />
-                      </div>
-                      <div className="w-100 d-flex align-items-center justify-content-between">
-                        <div>
-                          <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                            Elements
-                          </h6>
+                      <a
+                        className="dropdown-item py-2 ps-3 border-radius-md"
+                        href="./writer-my-thesis-dissertation"
+                      >
+                        <div className="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Write My Thesis Dissertation
+                            </h6>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/elements/avatars.html"
-                    >
-                      Avatars
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/elements/badges.html"
-                    >
-                      Badges
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/elements/breadcrumbs.html"
-                    >
-                      Breadcrumbs
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/elements/buttons.html"
-                    >
-                      Buttons
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/elements/dropdowns.html"
-                    >
-                      Dropdowns
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/elements/progress-bars.html"
-                    >
-                      Progress Bars
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/elements/toggles.html"
-                    >
-                      Toggles
-                    </a>
-                    <a
-                      className="dropdown-item ps-3 border-radius-md mb-1"
-                      href="../sections/elements/typography.html"
-                    >
-                      Typography
-                    </a>
+
+                    <div className="d-flex mb-2 mt-3">
+                      <a
+                        className="dropdown-item py-2 ps-3 border-radius-md"
+                        href="./writer-my-lab-report"
+                      >
+                        <div className="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Write My Lab Report
+                            </h6>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="d-flex mb-2 mt-3">
+                      <a
+                        className="dropdown-item py-2 ps-3 border-radius-md"
+                        href="./writer-my-literature-review"
+                      >
+                        <div className="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Write My Literature Review
+                            </h6>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="d-flex mb-2 mt-3">
+                      <a
+                        className="dropdown-item py-2 ps-3 border-radius-md"
+                        href="./writer-my-opinion-article"
+                      >
+                        <div className="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Write My Opinion Article
+                            </h6>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div className="d-flex mb-2 mt-3">
+                      <a
+                        className="dropdown-item py-2 ps-3 border-radius-md"
+                        href="./writer-my-article-review"
+                      >
+                        <div className="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+                              Write My Article Review
+                            </h6>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </ul>
@@ -431,20 +415,17 @@ const Navbar = () => {
                     <li className="nav-item list-group-item border-0 p-0">
                       <a
                         className="dropdown-item py-2 ps-3 border-radius-md"
-                        href=" https://www.creative-tim.com/learning-lab/bootstrap/overview/material-kit "
+                        href=" # "
                       >
                         <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                          News
+                          Blog
                         </h6>
-                        <span className="text-sm">
-                          All about News and Upcoming events
-                        </span>
                       </a>
                     </li>
                     <li className="nav-item list-group-item border-0 p-0">
                       <a
                         className="dropdown-item py-2 ps-3 border-radius-md"
-                        href=" https://www.creative-tim.com/learning-lab/bootstrap/colors/material-kit "
+                        href=" # "
                       >
                         <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                           Academic Writing
@@ -460,24 +441,21 @@ const Navbar = () => {
                   <div className="col-md-12 g-0">
                     <a
                       className="dropdown-item py-2 ps-3 border-radius-md"
-                      href="../pages/about-us.html"
+                      href="#"
                     >
                       <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                        News
+                        Blog
                       </h6>
-                      <span className="text-sm">
-                        All about News and Upcoming events
-                      </span>
                     </a>
                     <a
                       className="dropdown-item py-2 ps-3 border-radius-md"
-                      href="../pages/about-us.html"
+                      href="#"
                     >
                       <h6 className="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                         Academic Writing
                       </h6>
                       <span className="text-sm">
-                        See our colors, icons and typography
+                        See our academic writings papers, software and apps
                       </span>
                     </a>
                   </div>
