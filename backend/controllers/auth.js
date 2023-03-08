@@ -152,7 +152,7 @@ export const placeInitOrder = (req, res) => {
         if (errInsert) return res.status(401).json(errInsert);
         if (dataInsert) {
           const q =
-            "INSERT INTO orders (	`client_id`,	`topic`,	`paper_type`,	`discipline`,	`academic_level`,	`paper_instructions`,	`pages`,	`words`,	`spacing`,	`service`,	`style`, `price`, `deadline`) VALUES (?)";
+            "INSERT INTO orders (	`client_id`,	`paper_type`,	`academic_level`,	`pages`,	`words`, `price`, `deadline`) VALUES (?)";
           const values = [
             dataInsert.insertId,
             req.body.paper_type,
