@@ -125,7 +125,7 @@ export const logout = async (req, res) => {
     .json("User has been logged out!");
 };
 
-export const addOrder = (req, res) => {
+export const placeInitOrder = (req, res) => {
   const q = "SELECT * FROM users WHERE `email` = ? ";
   db.query(q, [req.body.email], (errSelect, dataSelect) => {
     if (errSelect) return res.status(400).json(errSelect);
@@ -142,10 +142,31 @@ export const addOrder = (req, res) => {
         req.body.deadline,
       ];
       db.query(q, [values], (err, data) => {
-        if (err) return res.status(500).json(err);
+        if (err) return res.status(400).json(err);
         return res.status(200).json(data.insertId);
       });
     } else {
+      const q = "INSERT INTO users (`email`, `type`) VALUES (?)";
+      db.query(q, [req.body.email, "client"], (errInsert, dataInsert) => {
+        if (errInsert) return res.status(401).json(errInsert);
+        if (dataInsert) {
+          const q =
+            "INSERT INTO orders (	`client_id`,	`topic`,	`paper_type`,	`discipline`,	`academic_level`,	`paper_instructions`,	`pages`,	`words`,	`spacing`,	`service`,	`style`, `price`, `deadline`) VALUES (?)";
+          const values = [
+            dataInsert.insertId,
+            req.body.paper_type,
+            req.body.academic_level,
+            req.body.pages,
+            req.body.words,
+            req.body.price,
+            req.body.deadline,
+          ];
+          db.query(q, [values], (err, data) => {
+            if (err) return res.status(400).json(err);
+            return res.status(200).json(data.insertId);
+          });
+        }
+      });
     }
   });
 };
