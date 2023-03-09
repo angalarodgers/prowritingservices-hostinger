@@ -70,7 +70,6 @@ const OrderInit = () => {
       toast.error("Error on Price!");
     } else {
       setErr("");
-      localStorage.setItem("init_order", JSON.stringify(inputs));
 
       try {
         const res = await axios.post(
@@ -80,8 +79,9 @@ const OrderInit = () => {
         console.log(res);
         if (res.status === 200) {
           toast.success("Registered Successfully!");
-          await sleep(3000);
-          navigate("/dashboard");
+          localStorage.setItem("init_order", JSON.stringify(inputs));
+
+          //window.location.href = "http://localhost:5174/";
         }
       } catch (error) {
         toast.error("Error Ocured!");
