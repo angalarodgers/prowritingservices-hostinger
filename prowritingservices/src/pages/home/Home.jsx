@@ -1,6 +1,9 @@
 import React from "react";
 
 const Home = () => {
+  const handleLogin = () => {
+    window.location.replace("https://prowritingservice.net/client/");
+  };
   return (
     <div className="col-lg-6">
       <div className="row justify-content-start">
@@ -19,7 +22,11 @@ const Home = () => {
       <div className="row justify-content-start mt-4">
         <div className="col-md-12">
           <div className="info">
-            <button type="button" className="btn btn-warning">
+            <button
+              type="button"
+              className="btn btn-warning"
+              onClick={handleLogin}
+            >
               Order My Paper
             </button>
           </div>

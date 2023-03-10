@@ -463,13 +463,16 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item ms-lg-auto">
-              <a className="nav-link nav-link-icon me-2" href="/login">
+              <a
+                className="nav-link nav-link-icon me-2"
+                href="https://prowritingservice.net/client/"
+              >
                 <i className="fa fa-user me-1" />
                 <p
                   className="d-inline text-sm z-index-1 font-weight-bold"
                   data-bs-toggle="tooltip"
                   data-bs-placement="bottom"
-                  title="Star us on Github"
+                  title="Sign in or Register into an Account"
                 >
                   My Account
                 </p>
