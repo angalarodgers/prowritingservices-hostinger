@@ -94,9 +94,11 @@ const Pricing = () => {
             </div>
           </div>
           <AcceptedPaymentMethod />
-          <button type="button" className="btn bg-gradient-warning">
-            Place Your Order
-          </button>
+          <a href="https://client.prowritingservice.net/">
+            <button type="button" className="btn bg-gradient-warning">
+              Place Your Order
+            </button>
+          </a>
         </div>
       </div>
     </section>

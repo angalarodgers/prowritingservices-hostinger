@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   const handleLogin = () => {
-    window.location.replace("https://prowritingservice.net/client/");
+    window.location.replace("https://client.prowritingservice.net/");
   };
   return (
     <div className="col-lg-6">

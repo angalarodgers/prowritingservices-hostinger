@@ -465,7 +465,7 @@ const Navbar = () => {
             <li className="nav-item ms-lg-auto">
               <a
                 className="nav-link nav-link-icon me-2"
-                href="https://prowritingservice.net/client/"
+                href="https://client.prowritingservice.net/"
               >
                 <i className="fa fa-user me-1" />
                 <p
