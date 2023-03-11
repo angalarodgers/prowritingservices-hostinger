@@ -11,15 +11,23 @@ export const AuthContextProvider = ({ children }) => {
   const login = async (inputs) => {
     try {
       const res = await axios.post(
-        "http://localhost:8880/api/auth/login",
+        "https://api.prowritingservice.net/api/auth/login",
         inputs,
         {
           withCredentials: true,
         }
       );
       console.log(res);
-      setCurrentUser(res.data);
-    } catch (error) {}
+      if (res.status === 200) {
+        setCurrentUser(res.data);
+        return res;
+      } else {
+        return res;
+      }
+    } catch (error) {
+      console.log(error);
+      return error;
+    }
   };
 
   useEffect(() => {
