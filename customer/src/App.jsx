@@ -29,6 +29,9 @@ import CanceledOrders from "./pages/canceled-orders/CanceledOrders";
 import Writers from "./pages/writers/Writers";
 import Notifications from "./pages/notifications/Notifications";
 import ContactSupport from "./pages/contact-support/ContactSupport";
+import ForgotPassword from "./pages/forgot-password/ForgotPassword";
+import Otp from "./pages/otp/Otp";
+import ResetPassword from "./pages/reset-password/ResetPassword";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -126,6 +129,18 @@ function App() {
     {
       path: "/register",
       element: <Register />,
+    },
+    {
+      path: "/otp",
+      element: <Otp />,
+    },
+    {
+      path: "/forgot-password",
+      element: <ForgotPassword />,
+    },
+    {
+      path: "/reset-password",
+      element: <ResetPassword />,
     },
   ]);
 

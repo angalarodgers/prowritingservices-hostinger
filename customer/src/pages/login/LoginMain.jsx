@@ -83,7 +83,10 @@ const LoginMain = () => {
                       </div>
                       <div className="form-check form-switch">
                         <label htmlFor="">
-                          <a href="#" style={{ textDecoration: "underline" }}>
+                          <a
+                            href="/forgot-password"
+                            style={{ textDecoration: "underline" }}
+                          >
                             Forgot Password
                           </a>
                         </label>
