@@ -56,7 +56,7 @@ const ContactSupport = () => {
       <div className="container">
         <div className="row my-5">
           <div className="col-md-6 mx-auto ">
-            <h5 style={{ color: "#F27127" }}>Send us a message</h5>
+            <h6 style={{ color: "#F27127" }}>Send us a message</h6>
           </div>
         </div>
         <div className="row">

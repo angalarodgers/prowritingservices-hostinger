@@ -22,7 +22,7 @@ const Writers = () => {
     <div className="accordion-1 py-5 mt-5">
       <div className="container">
         <div className="row ">
-          <h2 style={{ color: "#F27329" }}>Canceled Orders</h2>
+          <h6 style={{ color: "#F27329" }}>Writers</h6>
         </div>
         <div className="row card">
           <div className="col-md-10 mx-auto ">

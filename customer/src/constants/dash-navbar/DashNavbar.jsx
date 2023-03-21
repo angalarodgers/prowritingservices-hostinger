@@ -33,7 +33,7 @@ const DashNavbar = () => {
   );
   return (
     <div
-      className="container position-sticky z-index-sticky top-0"
+      className="container position-sticky top-0"
       style={{ marginTop: "-20px" }}
     >
       <div className="row">
@@ -68,15 +68,11 @@ const DashNavbar = () => {
                     <a
                       className="nav-link d-flex align-items-center me-2 active"
                       aria-current="page"
-                      href="#"
-                      id="OdropdownMenuButton"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+                      href="/new-orders"
                     >
                       <i className="fa fa-shopping-cart  opacity-6 text-dark me-1" />
                       My Orders
                     </a>
-                    <DropDown />
                   </li>
                   <li className="nav-item">
                     <a className="nav-link me-2" href="/writers">
